@@ -5,11 +5,11 @@ You are given a bitmask m and you want to efficiently iterate through all of
 its submasks. The mask s is submask of m if only bits that were included in
 bitmask are set
 """
+
 from typing import List
 
 
 def list_of_submasks(mask: int) -> List[int]:
-
     """
     Args:
         mask : number which shows mask ( always integer > 0, zero does not have any submasks )
@@ -33,7 +33,7 @@ def list_of_submasks(mask: int) -> List[int]:
     Traceback (most recent call last):
         ...
     AssertionError: mask needs to be positive integer, your input 0
-    
+
     """
 
     fmt = "mask needs to be positive integer, your input {}"

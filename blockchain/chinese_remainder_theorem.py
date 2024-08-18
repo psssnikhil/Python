@@ -49,6 +49,7 @@ def chinese_remainder_theorem(n1, r1, n2, r2):
 
 # ----------SAME SOLUTION USING InvertModulo instead ExtendedEuclid----------------
 
+
 # This function find the inverses of a i.e., a^(-1)
 def invert_modulo(a, n):
     """

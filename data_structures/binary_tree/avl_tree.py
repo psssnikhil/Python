@@ -1,6 +1,7 @@
 """
 An auto-balanced binary tree!
 """
+
 import math
 import random
 
@@ -105,7 +106,7 @@ def leftrotation(node):
 
 def rightrotation(node):
     """
-        a mirror symmetry rotation of the leftrotation
+    a mirror symmetry rotation of the leftrotation
     """
     print("right rotation node:", node.getdata())
     ret = node.getright()

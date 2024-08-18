@@ -1,6 +1,7 @@
 """
 Implementation of gaussian filter algorithm
 """
+
 from cv2 import imread, cvtColor, COLOR_BGR2GRAY, imshow, waitKey
 from numpy import pi, mgrid, exp, square, zeros, ravel, dot, uint8
 from itertools import product

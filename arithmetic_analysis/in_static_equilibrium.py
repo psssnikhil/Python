@@ -26,9 +26,7 @@ def polar_force(
     return [magnitude * cos(radians(angle)), magnitude * sin(radians(angle))]
 
 
-def in_static_equilibrium(
-    forces: array, location: array, eps: float = 10 ** -1
-) -> bool:
+def in_static_equilibrium(forces: array, location: array, eps: float = 10**-1) -> bool:
     """
     Check if a system is in equilibrium.
     It takes two numpy.array objects.

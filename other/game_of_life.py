@@ -27,6 +27,7 @@ Game-Of-Life Rules:
  Any dead cell with exactly three live neighbours be-
  comes a live cell, as if by reproduction.
  """
+
 import numpy as np
 import random, sys
 from matplotlib import pyplot as plt
@@ -50,7 +51,7 @@ def seed(canvas):
 
 
 def run(canvas):
-    """ This  function runs the rules of game through all points, and changes their status accordingly.(in the same canvas)
+    """This  function runs the rules of game through all points, and changes their status accordingly.(in the same canvas)
     @Args:
     --
     canvas : canvas of population to run the rules on.

@@ -15,9 +15,11 @@ def fracKnapsack(vl, wt, W, n):
     return (
         0
         if k == 0
-        else sum(vl[:k]) + (W - acc[k - 1]) * (vl[k]) / (wt[k])
-        if k != n
-        else sum(vl[:k])
+        else (
+            sum(vl[:k]) + (W - acc[k - 1]) * (vl[k]) / (wt[k])
+            if k != n
+            else sum(vl[:k])
+        )
     )
 
 

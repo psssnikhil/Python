@@ -1,6 +1,7 @@
 """
 Implementation of gradient descent algorithm for minimizing cost of a linear hypothesis function.
 """
+
 import numpy
 
 # List of input, output pairs

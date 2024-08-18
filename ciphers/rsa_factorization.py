@@ -7,6 +7,7 @@ Source: on page 3 of https://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf
 More readable source: https://www.di-mgt.com.au/rsa_factorize_n.html
 large number can take minutes to factor, therefore are not included in doctest.
 """
+
 import math
 import random
 from typing import List
@@ -39,7 +40,7 @@ def rsafactor(d: int, e: int, N: int) -> List[int]:
         while True:
             if t % 2 == 0:
                 t = t // 2
-                x = (g ** t) % N
+                x = (g**t) % N
                 y = math.gcd(x - 1, N)
                 if x > 1 and y > 1:
                     p = y

@@ -33,6 +33,7 @@ https://www.geeksforgeeks.org/segment-tree-efficient-implementation/
 >>> st.query(0, 2)
 [1, 2, 3]
 """
+
 from typing import List, Callable, TypeVar
 
 T = TypeVar("T")

@@ -47,6 +47,7 @@
 # Imports
 import numpy as np
 
+
 # Functions of binary conversion--------------------------------------
 def text_to_bits(text, encoding="utf-8", errors="surrogatepass"):
     """
@@ -71,13 +72,13 @@ def emitterConverter(sizePar, data):
     """
     :param sizePar: how many parity bits the message must have
     :param data:  information bits
-    :return: message to be transmitted by unreliable medium 
+    :return: message to be transmitted by unreliable medium
             - bits of information merged with parity bits
 
     >>> emitterConverter(4, "101010111111")
     ['1', '1', '1', '1', '0', '1', '0', '0', '1', '0', '1', '1', '1', '1', '1', '1']
     """
-    if sizePar + len(data) <= 2 ** sizePar - (len(data) - 1):
+    if sizePar + len(data) <= 2**sizePar - (len(data) - 1):
         print("ERROR - size of parity don't match with size of data")
         exit(0)
 

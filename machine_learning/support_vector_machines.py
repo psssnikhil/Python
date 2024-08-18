@@ -3,6 +3,7 @@ from sklearn import svm
 from sklearn.model_selection import train_test_split
 import doctest
 
+
 # different functions implementing different types of SVM's
 def NuSVC(train_x, train_y):
     svc_NuSVC = svm.NuSVC()

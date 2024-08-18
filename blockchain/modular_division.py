@@ -50,6 +50,7 @@ def invert_modulo(a, n):
 
 # ------------------ Finding Modular division using invert_modulo -------------------
 
+
 # This function used the above inversion of a to find x = (b*a^(-1))mod n
 def modular_division2(a, b, n):
     """
@@ -73,13 +74,13 @@ def modular_division2(a, b, n):
 
 def extended_gcd(a, b):
     """
-    >>> extended_gcd(10, 6)
-    (2, -1, 2)
+     >>> extended_gcd(10, 6)
+     (2, -1, 2)
 
-    >>> extended_gcd(7, 5)
-    (1, -2, 3)
+     >>> extended_gcd(7, 5)
+     (1, -2, 3)
 
-   ** extended_gcd function is used when d = gcd(a,b) is required in output
+    ** extended_gcd function is used when d = gcd(a,b) is required in output
 
     """
     assert a >= 0 and b >= 0

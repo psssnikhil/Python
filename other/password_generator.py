@@ -1,4 +1,5 @@
 """Password generator allows you to generate a random password of length N."""
+
 from random import choice, shuffle
 from string import ascii_letters, digits, punctuation
 

@@ -5,6 +5,7 @@ of a given number N?
 
 e.g. for 10, largest prime factor = 5. For 17, largest prime factor = 17.
 """
+
 import math
 
 

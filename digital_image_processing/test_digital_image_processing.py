@@ -16,6 +16,7 @@ from PIL import Image
 img = imread(r"digital_image_processing/image_data/lena_small.jpg")
 gray = cvtColor(img, COLOR_BGR2GRAY)
 
+
 # Test: convert_to_negative()
 def test_convert_to_negative():
     negative_img = cn.convert_to_negative(img)

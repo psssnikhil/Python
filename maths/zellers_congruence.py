@@ -3,7 +3,6 @@ import argparse
 
 
 def zeller(date_input: str) -> str:
-
     """
     Zellers Congruence Algorithm
     Find the day of the week for nearly any Gregorian or Julian calendar date
@@ -64,7 +63,7 @@ def zeller(date_input: str) -> str:
     Traceback (most recent call last):
         ...
     ValueError: Must be 10 characters long
-"""
+    """
 
     # Days of the week for response
     days = {

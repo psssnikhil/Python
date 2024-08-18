@@ -1,8 +1,10 @@
 """
 @author: MatteoRaso
 """
+
 from numpy import pi, sqrt
 from random import uniform
+
 
 def pi_estimator(iterations: int):
     """An implementation of the Monte Carlo method used to find pi.
@@ -15,12 +17,11 @@ def pi_estimator(iterations: int):
     6. Print the estimated and numpy value of pi
     """
 
-
     circle_dots = 0
 
     # A local function to see if a dot lands in the circle.
     def circle(x: float, y: float):
-        distance_from_centre = sqrt((x ** 2) + (y ** 2))
+        distance_from_centre = sqrt((x**2) + (y**2))
         # Our circle has a radius of 1, so a distance greater than 1 would land outside the circle.
         return distance_from_centre <= 1
 

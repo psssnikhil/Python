@@ -6,6 +6,7 @@ Requirements:
 Python:
   - 3.5
 """
+
 import numpy as np
 import skfuzzy as fuzz
 

@@ -12,7 +12,7 @@ smaller than n when n is smaller than 10 million.  Only for positive numbers.
 
 
 def prime_sum(n: int) -> int:
-    """ Returns the sum of all the primes below n.
+    """Returns the sum of all the primes below n.
 
     >>> prime_sum(2_000_000)
     142913828922
@@ -41,7 +41,7 @@ def prime_sum(n: int) -> int:
     list_[0] = 1
     list_[1] = 1
 
-    for i in range(2, int(n ** 0.5) + 1):
+    for i in range(2, int(n**0.5) + 1):
         if list_[i] == 0:
             for j in range(i * i, n + 1, i):
                 list_[j] = 1

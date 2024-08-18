@@ -9,6 +9,7 @@
     have solved the puzzle. else, we backtrack and place another number
     in that cell and repeat this process.
 """
+
 # assigning initial values to the grid
 initial_grid = [
     [3, 0, 6, 5, 0, 8, 4, 0, 0],
@@ -105,7 +106,7 @@ def sudoku(grid):
      [7, 4, 5, 2, 8, 6, 3, 1, 9]]
      >>> sudoku(no_solution)
      False
-     """
+    """
 
     if is_completed(grid):
         return grid

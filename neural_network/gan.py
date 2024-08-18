@@ -24,7 +24,7 @@ def arctan(x):
 
 
 def d_arctan(x):
-    return 1 / (1 + x ** 2)
+    return 1 / (1 + x**2)
 
 
 def log(x):
@@ -257,16 +257,16 @@ if __name__ == "__main__":
 
         # ---- Update Gradient ----
         m1 = beta_1 * m1 + (1 - beta_1) * grad_w1
-        v1 = beta_2 * v1 + (1 - beta_2) * grad_w1 ** 2
+        v1 = beta_2 * v1 + (1 - beta_2) * grad_w1**2
 
         m2 = beta_1 * m2 + (1 - beta_1) * grad_b1
-        v2 = beta_2 * v2 + (1 - beta_2) * grad_b1 ** 2
+        v2 = beta_2 * v2 + (1 - beta_2) * grad_b1**2
 
         m3 = beta_1 * m3 + (1 - beta_1) * grad_w2
-        v3 = beta_2 * v3 + (1 - beta_2) * grad_w2 ** 2
+        v3 = beta_2 * v3 + (1 - beta_2) * grad_w2**2
 
         m4 = beta_1 * m4 + (1 - beta_1) * grad_b2
-        v4 = beta_2 * v4 + (1 - beta_2) * grad_b2 ** 2
+        v4 = beta_2 * v4 + (1 - beta_2) * grad_b2**2
 
         D_W1 = D_W1 - (learing_rate / (np.sqrt(v1 / (1 - beta_2)) + eps)) * (
             m1 / (1 - beta_1)
@@ -356,46 +356,46 @@ if __name__ == "__main__":
 
         # ---- Update Gradient ----
         m5 = beta_1 * m5 + (1 - beta_1) * grad_G_w1
-        v5 = beta_2 * v5 + (1 - beta_2) * grad_G_w1 ** 2
+        v5 = beta_2 * v5 + (1 - beta_2) * grad_G_w1**2
 
         m6 = beta_1 * m6 + (1 - beta_1) * grad_G_b1
-        v6 = beta_2 * v6 + (1 - beta_2) * grad_G_b1 ** 2
+        v6 = beta_2 * v6 + (1 - beta_2) * grad_G_b1**2
 
         m7 = beta_1 * m7 + (1 - beta_1) * grad_G_w2
-        v7 = beta_2 * v7 + (1 - beta_2) * grad_G_w2 ** 2
+        v7 = beta_2 * v7 + (1 - beta_2) * grad_G_w2**2
 
         m8 = beta_1 * m8 + (1 - beta_1) * grad_G_b2
-        v8 = beta_2 * v8 + (1 - beta_2) * grad_G_b2 ** 2
+        v8 = beta_2 * v8 + (1 - beta_2) * grad_G_b2**2
 
         m9 = beta_1 * m9 + (1 - beta_1) * grad_G_w3
-        v9 = beta_2 * v9 + (1 - beta_2) * grad_G_w3 ** 2
+        v9 = beta_2 * v9 + (1 - beta_2) * grad_G_w3**2
 
         m10 = beta_1 * m10 + (1 - beta_1) * grad_G_b3
-        v10 = beta_2 * v10 + (1 - beta_2) * grad_G_b3 ** 2
+        v10 = beta_2 * v10 + (1 - beta_2) * grad_G_b3**2
 
         m11 = beta_1 * m11 + (1 - beta_1) * grad_G_w4
-        v11 = beta_2 * v11 + (1 - beta_2) * grad_G_w4 ** 2
+        v11 = beta_2 * v11 + (1 - beta_2) * grad_G_w4**2
 
         m12 = beta_1 * m12 + (1 - beta_1) * grad_G_b4
-        v12 = beta_2 * v12 + (1 - beta_2) * grad_G_b4 ** 2
+        v12 = beta_2 * v12 + (1 - beta_2) * grad_G_b4**2
 
         m13 = beta_1 * m13 + (1 - beta_1) * grad_G_w5
-        v13 = beta_2 * v13 + (1 - beta_2) * grad_G_w5 ** 2
+        v13 = beta_2 * v13 + (1 - beta_2) * grad_G_w5**2
 
         m14 = beta_1 * m14 + (1 - beta_1) * grad_G_b5
-        v14 = beta_2 * v14 + (1 - beta_2) * grad_G_b5 ** 2
+        v14 = beta_2 * v14 + (1 - beta_2) * grad_G_b5**2
 
         m15 = beta_1 * m15 + (1 - beta_1) * grad_G_w6
-        v15 = beta_2 * v15 + (1 - beta_2) * grad_G_w6 ** 2
+        v15 = beta_2 * v15 + (1 - beta_2) * grad_G_w6**2
 
         m16 = beta_1 * m16 + (1 - beta_1) * grad_G_b6
-        v16 = beta_2 * v16 + (1 - beta_2) * grad_G_b6 ** 2
+        v16 = beta_2 * v16 + (1 - beta_2) * grad_G_b6**2
 
         m17 = beta_1 * m17 + (1 - beta_1) * grad_G_w7
-        v17 = beta_2 * v17 + (1 - beta_2) * grad_G_w7 ** 2
+        v17 = beta_2 * v17 + (1 - beta_2) * grad_G_w7**2
 
         m18 = beta_1 * m18 + (1 - beta_1) * grad_G_b7
-        v18 = beta_2 * v18 + (1 - beta_2) * grad_G_b7 ** 2
+        v18 = beta_2 * v18 + (1 - beta_2) * grad_G_b7**2
 
         G_W1 = G_W1 - (learing_rate / (np.sqrt(v5 / (1 - beta_2)) + eps)) * (
             m5 / (1 - beta_1)

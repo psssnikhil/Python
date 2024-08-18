@@ -6,6 +6,7 @@ to 10 without any remainder.
 What is the smallest positive number that is evenly divisible(divisible with no
 remainder) by all of the numbers from 1 to N?
 """
+
 """ Euclidean GCD Algorithm """
 
 

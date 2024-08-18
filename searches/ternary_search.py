@@ -6,11 +6,13 @@ This is a type of divide and conquer algorithm which divides the search space in
 Time Complexity  : O(log3 N)
 Space Complexity : O(1)
 """
+
 import sys
 
 # This is the precision for this function which can be altered.
 # It is recommended for users to keep this number greater than or equal to 10.
 precision = 10
+
 
 # This is the linear search that will occur after the search space has become smaller.
 def lin_search(left, right, A, target):

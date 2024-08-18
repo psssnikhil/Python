@@ -13,7 +13,7 @@ Find a(10^15)
 """
 
 ks = [k for k in range(2, 20 + 1)]
-base = [10 ** k for k in range(ks[-1] + 1)]
+base = [10**k for k in range(ks[-1] + 1)]
 memo = {}
 
 
@@ -28,7 +28,7 @@ def next_term(a_i, k, i, n):
     is cached to greatly speed up the computation.
 
     Arguments:
-    a_i -- array of digits starting from the one's place that represent 
+    a_i -- array of digits starting from the one's place that represent
            the i-th term in the sequence
     k --  k when terms are written in the from a(i) = b*10^k + c.
           Term are calulcated until c > 10^k or the n-th term is reached.
@@ -196,9 +196,9 @@ def solution(n):
 
     a_n = 0
     for j in range(len(digits)):
-        a_n += digits[j] * 10 ** j
+        a_n += digits[j] * 10**j
     return a_n
 
 
 if __name__ == "__main__":
-    print(solution(10 ** 15))
+    print(solution(10**15))

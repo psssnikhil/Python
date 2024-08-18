@@ -8,7 +8,6 @@ def line_length(
     x_end: Union[int, float],
     steps: int = 100,
 ) -> float:
-
     """
     Approximates the arc length of a line segment by treating the curve as a
     sequence of linear lines and summing their lengths

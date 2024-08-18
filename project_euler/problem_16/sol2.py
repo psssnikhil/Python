@@ -7,7 +7,7 @@ What is the sum of the digits of the number 2^1000?
 
 def solution(power):
     """Returns the sum of the digits of the number 2^power.
-    
+
     >>> solution(1000)
     1366
     >>> solution(50)
@@ -17,7 +17,7 @@ def solution(power):
     >>> solution(15)
     26
     """
-    n = 2 ** power
+    n = 2**power
     r = 0
     while n:
         r, n = r + n % 10, n // 10
